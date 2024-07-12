@@ -168,11 +168,16 @@
 <script>
     function changeTheme(){
         let body=document.querySelector("body");
-        body.classList.add("dark");
+
+        body.classList.toggle("dark");
     }
 
     let themeButton= document.querySelector(".theme-button");
     themeButton.addEventListener("click", changeTheme);
+
+    //1. Determine the variable let for the button, using also document query selector
+    //2. Add an event listener and determine the function name, in this case changeTheme.
+    //3. Create the function changeTheme
 </script>
 </body>
 </html>
