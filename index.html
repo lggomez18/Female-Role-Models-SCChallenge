@@ -120,8 +120,32 @@
             justify-content: flex-end;
             align-items: center;
             margin: 20px auto;
+            margin-bottom: 10px;
             padding: 0 20px;
          }
+
+         .buttons-container .btn{
+            padding: 0 10px;
+            margin-left: 10px;
+            display: inline-flex;
+            background: #ddd;
+            color:#fff;
+            cursor: pointer;
+         }
+
+
+         .buttons-container .btn .active{
+           background: #444; 
+         }
+
+         .buttons-container .btn:nth-child(2){
+            font-size: 1.5em;         
+        }
+
+        .buttons-container .btn:nth-child(3){
+            font-size: 1.5em;         
+        }
+
 
     </style>
 </head>
@@ -130,7 +154,7 @@
     
     <div class="container">
         <div class="buttons-container">
-            <span class="btn">A</span>
+            <span class="btn active">A</span>
             <span class="btn">A</span>
             <span class="btn">A</span>
         </div>
