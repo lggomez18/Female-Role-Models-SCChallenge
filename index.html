@@ -224,6 +224,17 @@
     //1. Determine the variable let for the button, using also document query selector
     //2. Add an event listener and determine the function name, in this case changeTheme.
     //3. Create the function changeTheme
+
+
+    let buttons = document.querySelector('.buttons-container');
+    let btn = buttons.querySelector('.btn');
+    for (var i=0; i<btn.lenght; i++){
+        btn[i].addEventListener('click', function(){
+            let current=document.getElementByClassName('active');
+            current[0].className = current[0].className.replace("active", "");
+            this.className += " active";
+        })
+    }
 </script>
 </body>
 </html>
